@@ -1,7 +1,10 @@
 {
   "version": "0.2",
   "language": "en",
-  "ignorePaths": ["node_modules/", "package-lock.json"],
+  "ignorePaths": [
+    "node_modules/",
+    "package-lock.json"
+  ],
   "words": [
     "agnoster",
     "Buildx",
@@ -27,6 +30,7 @@
     "pids",
     "seatonjiang",
     "stylelintcache",
+    "tseslint",
     "unional",
     "usernamehw",
     "vuepress",
