@@ -1,0 +1,22 @@
+# Pre-commit hook log file
+TEMP_FILE=".git/hooks/pre-commit.log"
+echo "" > $TEMP_FILE  # Clear log file at the start
+
+echo "✨ Running pre-commit hook..." | tee -a $TEMP_FILE
+
+run_lint_staged() {
+  echo "✨ npm run lint-stage..." | tee -a $TEMP_FILE
+  if npx lint-staged --allow-empty >> $TEMP_FILE 2>&1; then
+    echo "✅ Lint-staged completed" | tee -a $TEMP_FILE
+  else
+    echo "⛔ Lint-staged failed" | tee -a $TEMP_FILE
+    cat $TEMP_FILE
+    code $TEMP_FILE
+    exit 1
+  fi
+}
+
+run_lint_staged
+
+echo "✨ pre-commit hook completed" | tee -a $TEMP_FILE
+exit 0
