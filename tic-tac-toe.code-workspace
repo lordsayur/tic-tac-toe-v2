@@ -2,8 +2,8 @@
   "folders": [
     {
       "name": "✨ tic-tac-toe",
-      "path": "."
-    }
+      "path": ".",
+    },
   ],
   "settings": {
     "editor.formatOnSave": true,
@@ -13,33 +13,33 @@
       "source.fixAll.eslint": "explicit",
       "source.organizeImports": "explicit",
       "source.fixAll.ts": "explicit",
-      "source.fixAll.sortJSON": "always"
+      "source.fixAll.sortJSON": "always",
     },
     "cSpell.diagnosticLevel": "Error",
     "cSpell.caseSensitive": false,
     "cSpell.checkOnlyEnabledFileTypes": false,
     "terminal.integrated.profiles.linux": {
       "zsh": {
-        "path": "zsh"
-      }
+        "path": "zsh",
+      },
     },
     "terminal.integrated.profiles.osx": {
       "zsh": {
         "path": "zsh",
-        "args": ["-l"]
-      }
+        "args": ["-l"],
+      },
     },
     "terminal.integrated.defaultProfile.osx": "zsh",
     "terminal.integrated.defaultProfile.linux": "zsh",
     "workbench.editorAssociations": {
-      "*.md": "vscode.markdown.preview.editor"
+      "*.md": "vscode.markdown.preview.editor",
     },
     "bracketLens.prefix": " 🍩 ",
     "github.copilot.chat.commitMessageGeneration.instructions": [
       {
-        "text": "Use conventional commit message format"
-      }
-    ]
+        "text": "Use conventional commit message format",
+      },
+    ],
   },
   "extensions": {
     "recommendations": [
@@ -58,7 +58,7 @@
       "seatonjiang.gitmoji-vscode",
       "xabikos.JavaScriptSnippets",
       "albert.TabOut",
-      "folke.vscode-monorepo-workspace"
-    ]
-  }
+      "folke.vscode-monorepo-workspace",
+    ],
+  },
 }
