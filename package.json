@@ -1,0 +1,25 @@
+{
+  "name": "tic-tac-toe",
+  "version": "1.0.0",
+  "private": true,
+  "description": "Super charged tic tac toe app",
+  "homepage": "https://github.com/lordsayur/tic-tac-toe-v2#readme",
+  "bugs": {
+    "url": "https://github.com/lordsayur/tic-tac-toe-v2/issues"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/lordsayur/tic-tac-toe-v2.git"
+  },
+  "license": "MIT",
+  "author": "lordsayur",
+  "type": "module",
+  "workspaces": [
+    "apps/*",
+    "packages/*",
+    "tests/*"
+  ],
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  }
+}
