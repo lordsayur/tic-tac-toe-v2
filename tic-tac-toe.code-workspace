@@ -1,8 +1,64 @@
 {
-    "folders": [
-        {
-            "name": "✨ tic-tac-toe",
-            "path": "."
-        }
+  "folders": [
+    {
+      "name": "✨ tic-tac-toe",
+      "path": "."
+    }
+  ],
+  "settings": {
+    "editor.formatOnSave": true,
+    "editor.defaultFormatter": "esbenp.prettier-vscode",
+    "editor.formatOnPaste": true,
+    "editor.codeActionsOnSave": {
+      "source.fixAll.eslint": "explicit",
+      "source.organizeImports": "explicit",
+      "source.fixAll.ts": "explicit",
+      "source.fixAll.sortJSON": "always"
+    },
+    "cSpell.diagnosticLevel": "Error",
+    "cSpell.caseSensitive": false,
+    "cSpell.checkOnlyEnabledFileTypes": false,
+    "terminal.integrated.profiles.linux": {
+      "zsh": {
+        "path": "zsh"
+      }
+    },
+    "terminal.integrated.profiles.osx": {
+      "zsh": {
+        "path": "zsh",
+        "args": ["-l"]
+      }
+    },
+    "terminal.integrated.defaultProfile.osx": "zsh",
+    "terminal.integrated.defaultProfile.linux": "zsh",
+    "workbench.editorAssociations": {
+      "*.md": "vscode.markdown.preview.editor"
+    },
+    "bracketLens.prefix": " 🍩 ",
+    "github.copilot.chat.commitMessageGeneration.instructions": [
+      {
+        "text": "Use conventional commit message format"
+      }
     ]
+  },
+  "extensions": {
+    "recommendations": [
+      "streetsidesoftware.code-spell-checker",
+      "ms-azuretools.vscode-docker",
+      "dbaeumer.vscode-eslint",
+      "mhutchie.git-graph",
+      "github.copilot",
+      "eamodio.gitlens",
+      "esbenp.prettier-vscode",
+      "unional.vscode-sort-package-json",
+      "richie5um2.vscode-sort-json",
+      "wraith13.bracket-lens",
+      "ms-vscode-remote.vscode-remote-extensionpack",
+      "usernamehw.errorlens",
+      "seatonjiang.gitmoji-vscode",
+      "xabikos.JavaScriptSnippets",
+      "albert.TabOut",
+      "folke.vscode-monorepo-workspace"
+    ]
+  }
 }
