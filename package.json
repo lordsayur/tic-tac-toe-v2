@@ -21,5 +21,8 @@
   ],
   "scripts": {
     "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "devDependencies": {
+    "cspell": "^8.17.1"
   }
 }
