@@ -18,17 +18,6 @@
     "cSpell.diagnosticLevel": "Error",
     "cSpell.caseSensitive": false,
     "cSpell.checkOnlyEnabledFileTypes": false,
-    "terminal.integrated.profiles.linux": {
-      "zsh": {
-        "path": "zsh",
-      },
-    },
-    "terminal.integrated.profiles.osx": {
-      "zsh": {
-        "path": "zsh",
-        "args": ["-l"],
-      },
-    },
     "terminal.integrated.defaultProfile.osx": "zsh",
     "terminal.integrated.defaultProfile.linux": "zsh",
     "workbench.editorAssociations": {
