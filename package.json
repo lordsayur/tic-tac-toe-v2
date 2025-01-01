@@ -25,7 +25,7 @@
     "format": "npx prettier . --write",
     "lint": "eslint . --fix",
     "prepare": "husky",
-    "typecheck": "tsc --noEmit"
+    "typecheck": "npm run typecheck --workspaces"
   },
   "devDependencies": {
     "@eslint/js": "^9.17.0",
