@@ -25,6 +25,7 @@
     "format": "npx prettier . --write",
     "lint": "eslint . --fix",
     "prepare": "husky",
+    "test": "npm run test --workspaces",
     "typecheck": "npm run typecheck --workspaces"
   },
   "devDependencies": {
