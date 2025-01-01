@@ -48,6 +48,7 @@
       "xabikos.JavaScriptSnippets",
       "albert.TabOut",
       "folke.vscode-monorepo-workspace",
+      "vitest.explorer",
     ],
   },
 }

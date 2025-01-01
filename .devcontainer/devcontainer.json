@@ -26,7 +26,8 @@
         "seatonjiang.gitmoji-vscode",
         "xabikos.JavaScriptSnippets",
         "albert.TabOut",
-        "folke.vscode-monorepo-workspace"
+        "folke.vscode-monorepo-workspace",
+        "vitest.explorer"
       ]
     }
   },
