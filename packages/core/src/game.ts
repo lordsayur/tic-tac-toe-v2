@@ -1,8 +1,12 @@
+export type State = "x" | "o" | "-";
+
+export type BoardState = State[][];
+
 export class Game {
   private _currentBoardState: number = 0;
-  private _boardStates: string[][][] = [];
+  private _boardStates: BoardState[] = [];
 
-  start(initialState?: string[][]) {
+  start(initialState?: BoardState) {
     if (initialState) {
       this._boardStates.push(initialState);
       return;
