@@ -6,9 +6,13 @@ export class Game {
   private _currentBoardState: number = 0;
   private _boardStates: BoardState[] = [];
 
-  start(initialState?: BoardState) {
-    if (initialState) {
-      this._boardStates.push(initialState);
+  start(boardState?: {
+    initialState: BoardState[];
+    currentBoardState: number;
+  }) {
+    if (boardState) {
+      this._boardStates = boardState.initialState;
+      this._currentBoardState = boardState.currentBoardState;
       return;
     }
 

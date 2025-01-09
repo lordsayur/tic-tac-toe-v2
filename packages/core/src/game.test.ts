@@ -24,11 +24,16 @@ describe("Game", () => {
       const game = new Game();
 
       // act
-      game.start([
-        ["x", "-", "-"],
-        ["-", "-", "-"],
-        ["-", "-", "-"],
-      ]);
+      game.start({
+        initialState: [
+          [
+            ["x", "-", "-"],
+            ["-", "-", "-"],
+            ["-", "-", "-"],
+          ],
+        ],
+        currentBoardState: 0,
+      });
 
       // assert
       expect(game.boardStates).toHaveLength(1);
