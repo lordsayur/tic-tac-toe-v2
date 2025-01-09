@@ -2,7 +2,12 @@ export class Game {
   private _currentBoardState: number = 0;
   private _boardStates: string[][][] = [];
 
-  start() {
+  start(initialState?: string[][]) {
+    if (initialState) {
+      this._boardStates.push(initialState);
+      return;
+    }
+
     this._boardStates.push([
       ["-", "-", "-"],
       ["-", "-", "-"],
