@@ -7,15 +7,17 @@ export class BoardStateFactory {
     ];
   }
 
-  create(cell?: CellDetails) {
+  create(cell?: CellDetails, boardState?: BoardState): BoardState {
+    const newBoardState = boardState ?? this.initialState;
+
     if (cell) {
-      return this.update(this.initialState, cell);
+      return this.update(newBoardState, cell);
     }
 
-    return this.initialState;
+    return newBoardState;
   }
 
-  update(boardState: BoardState, cell: CellDetails) {
+  update(boardState: BoardState, cell: CellDetails): BoardState {
     boardState[cell.row - 1][cell.col - 1] = cell.value;
 
     return boardState;

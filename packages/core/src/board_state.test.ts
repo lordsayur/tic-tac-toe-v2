@@ -32,4 +32,23 @@ describe("State", () => {
       ["-", "-", "-"],
     ]);
   });
+
+  it("should create state with specified cell from existing board state", () => {
+    TestLog.arrange();
+    const factory = new BoardStateFactory();
+    const initialBoardState = factory.create({ row: 1, col: 1, value: "x" });
+
+    TestLog.act();
+    const result = factory.create(
+      { row: 1, col: 2, value: "o" },
+      initialBoardState,
+    );
+
+    TestLog.act();
+    expect(result).toStrictEqual<BoardState>([
+      ["x", "o", "-"],
+      ["-", "-", "-"],
+      ["-", "-", "-"],
+    ]);
+  });
 });
