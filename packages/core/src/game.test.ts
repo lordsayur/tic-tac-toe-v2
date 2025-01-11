@@ -1,17 +1,18 @@
 import { describe, expect, it } from "vitest";
 import { BoardState, Game, initialState } from "./game";
+import { TestLog } from "./test-utils/test_log";
 
 describe("Game", () => {
   describe("start", () => {
     describe("without board states", () => {
       it("should initialize board state with '-' by default", () => {
-        // arrange
+        TestLog.arrange();
         const game = new Game();
 
-        // act
+        TestLog.act();
         game.start();
 
-        // assert
+        TestLog.assert();
         expect(game.boardStates).toHaveLength(1);
         expect(game.currentBoardState).toStrictEqual<BoardState>(
           initialState(),
@@ -21,10 +22,10 @@ describe("Game", () => {
 
     describe("with board states", () => {
       it("should initialize board state with specified state", () => {
-        // arrange
+        TestLog.arrange();
         const game = new Game();
 
-        // act
+        TestLog.act();
         game.start({
           states: [
             [
@@ -36,7 +37,7 @@ describe("Game", () => {
           currentState: 0,
         });
 
-        // assert
+        TestLog.assert();
         expect(game.boardStates).toHaveLength(1);
         expect(game.currentBoardState).toStrictEqual<BoardState>([
           ["x", "-", "-"],
@@ -46,10 +47,10 @@ describe("Game", () => {
       });
 
       it("should throw invalid current state exception", () => {
-        // arrange
+        TestLog.arrange();
         const game = new Game();
 
-        // act
+        TestLog.act();
         expect(() =>
           game.start({
             states: [
