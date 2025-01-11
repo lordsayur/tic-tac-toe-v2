@@ -2,7 +2,7 @@
   "compilerOptions": {
     "target": "ESNext",
     "module": "NodeNext",
-    "lib": ["ESNext"],
+    "lib": ["ESNext", "DOM"],
     "noUnusedLocals": true,
     "noUnusedParameters": true,
     "isolatedModules": true,
