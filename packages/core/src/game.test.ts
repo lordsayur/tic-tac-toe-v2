@@ -1,5 +1,5 @@
 import { describe, expect, it } from "vitest";
-import { BoardState, Game } from "./game";
+import { BoardState, Game, initialState } from "./game";
 
 describe("Game", () => {
   describe("start", () => {
@@ -13,11 +13,9 @@ describe("Game", () => {
 
         // assert
         expect(game.boardStates).toHaveLength(1);
-        expect(game.currentBoardState).toStrictEqual<BoardState>([
-          ["-", "-", "-"],
-          ["-", "-", "-"],
-          ["-", "-", "-"],
-        ]);
+        expect(game.currentBoardState).toStrictEqual<BoardState>(
+          initialState(),
+        );
       });
     });
 

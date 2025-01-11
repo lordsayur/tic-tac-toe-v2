@@ -16,11 +16,7 @@ export class Game {
       return;
     }
 
-    this._boardStates.push([
-      ["-", "-", "-"],
-      ["-", "-", "-"],
-      ["-", "-", "-"],
-    ]);
+    this._boardStates.push(initialState());
   }
 
   get currentBoardState() {
@@ -30,4 +26,12 @@ export class Game {
   get boardStates() {
     return this._boardStates;
   }
+}
+
+export function initialState(): BoardState {
+  return [
+    ["-", "-", "-"],
+    ["-", "-", "-"],
+    ["-", "-", "-"],
+  ];
 }
